@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #212121;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    padding: 30px 0px 30px 0px;
+}
+
+.container {
+    color: #f4f4f4;
+    background-color: #212121;
+    border: 1px solid #212121;
+    box-shadow: 6px 6px 12px #000, 
+    -6px -6px 12px #2f2f2f;
+    padding: 40px;
+    border-radius: 40px;
+    width: 70%;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0px;
+    background-color: #212121;
+    border: 1px solid #212121;
+    box-shadow: 2px 2px 5px #000,
+    -2px -2px 5px #2f2f2f;
+    border-radius: 40px;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#taskInput {
+    padding: 10px;
+    background-color: #212121;
+    border: 1px solid #212121;
+    box-shadow: 2px 2px 5px #000, 
+    -2px -2px 5px #2f2f2f;
+    color: white;
+    flex: 1;
+    padding: 10px;
+    border-radius: 40px;
+}
+
+#addTaskBtn {
+    padding: 10px;
+    background-color: #212121;
+    border: 1px solid #212121;
+    box-shadow: 2px 2px 5px #000, 
+    -2px -2px 5px #2f2f2f;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+#addTaskBtn:hover {
+    background-color: #218838;
+}
+
+/* Media query for screens smaller than 370px */
+@media (max-width: 750px) {
+    .input-container {
+        flex-direction: column;
+    }
+    li{
+        flex-direction: column;
+    }
+
+    #addTaskBtn {
+        /* margin-left: 0; */
+        margin-top: 20px;
+    }
+    .delete-btn{
+        margin-top: 20px;
+    }
+}
+
+ul {
+    list-style-type: none;
+    padding: 0 5px;
+}
+
+li {
+    color: #000;
+    padding: 10px;
+    background-color: #212121;
+    border: 1px solid #212121;
+    box-shadow: 2px 2px 5px #000, 
+    -2px -2px 5px #2f2f2f;
+    color: white;
+    margin: 15px 0px;
+    padding: 20px 20px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.delete-btn {
+    color: #000;
+    padding: 10px;
+    max-height: 60px;
+    background-color: #212121;
+    border: 1px solid #212121;
+    box-shadow: 2px 2px 5px #000, 
+    -2px -2px 5px #2f2f2f;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background: #c82333;
+}
